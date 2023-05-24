@@ -1,8 +1,11 @@
+import dotenv from 'dotenv';
 import express from 'express';
 // import cors from "cors";
 // import cookieParser from "cookie-parser";
 
-const PORT = 5000;
+dotenv.config();
+
+const PORT = process.env.PORT;
 
 const app = express();
 
